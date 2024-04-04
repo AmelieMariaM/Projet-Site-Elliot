@@ -9,6 +9,9 @@ body {
   background-image: url(images/fond.jpg);
   background-size: cover;
 }
+
+/* NAV */
+
 .main-nav {
   display: flex;
   justify-content: flex-end;
@@ -104,6 +107,7 @@ p {
 }
 
 .btn {
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
@@ -132,6 +136,7 @@ h3 {
   font-weight: 500;
   font-style: normal;
   font-size: 25px;
+  padding-top: 30px;
 }
 
 .barre-container {
@@ -145,7 +150,7 @@ h3 {
   height: 60px;
 }
 
-/*  PROJECTS PHOTO GALLERY */
+/*  PROJECTS GALLERY */
 
 .gallery {
   display: flex;
@@ -175,4 +180,44 @@ h3 {
 .gallery-photo {
   padding: 10px;
   border-radius: 15px;
+}
+
+/* SECTION CONTACT */
+
+.infos {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#form-group {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1.5px solid rgb(53, 52, 52);
+}
+.text-area {
+  width: 400px;
+  border: 1.5px solid rgb(53, 52, 52);
+  resize: none;
+}
+
+.send {
+  margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 0.5rem;
+  width: 7rem;
+  border-radius: 2rem;
+
+  cursor: pointer;
+  color: black;
 }

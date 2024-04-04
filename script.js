@@ -24,3 +24,45 @@
 // contact.addEventListener("click", function () {
 //   window.location.href = "contact.html";
 // });
+
+// const chocoButton = document.querySelector("#chocoButton");
+// const milkButton = document.querySelector("#milkButton");
+// const mixButton = document.querySelector("#mixButton");
+// const cleanButton = document.querySelector("#cleanButton");
+// const machine = document.querySelector("#machine");
+
+// // Add events bellow:
+
+// chocoButton.addEventListener("click", function () {
+//   machine.innerText += "🍫";
+// });
+// milkButton.addEventListener("click", function () {
+//   machine.innerText += "🥛";
+// });
+
+// cleanButton.addEventListener("click", function () {
+//   machine.innerText = "";
+// });
+
+// mixButton.addEventListener("click", function () {
+//   let content = machine.textContent;
+//   let chocolate = 0;
+//   let milk = 0;
+//   console.log(machine.textContent);
+
+//   content.split("").forEach(function (character) {
+//     if (character === "🍫") {
+//       chocolate++;
+//     }
+//     if (character === "🥛") {
+//       milk++;
+//     }
+//     console.log(chocolate);
+//   });
+
+//   console.log(content);
+//   console.log(chocolate);
+//   console.log(milk);
+//   let pairs = Math.min(chocolate, milk);
+//   console.log(pairs);
+// });
