@@ -1,68 +1,26 @@
-// let home = document.getElementById("home");
-// let about = document.getElementById("about");
-// let design = document.getElementById("design");
-// let art = document.getElementById("art");
-// let contact = document.getElementById("contact");
+const carouselImages = document.querySelectorAll(".carousel-image");
+const prevButton = document.querySelector(".carousel-button.prev");
+const nextButton = document.querySelector(".carousel-button.next");
+let currentIndex = 0;
 
-// home.addEventListener("click", function () {
-//   console.log("vous avez cliqué sur home");
-//   window.location.href = "index.html";
-// });
+function showImage(index) {
+  carouselImages.forEach((img, i) => {
+    img.classList.remove("active");
+    if (i === index) {
+      img.classList.add("active");
+    }
+  });
+}
 
-// about.addEventListener("click", function () {
-//   window.location.href = "about.html";
-// });
+prevButton.addEventListener("click", () => {
+  currentIndex =
+    (currentIndex - 1 + carouselImages.length) % carouselImages.length;
+  showImage(currentIndex);
+});
 
-// design.addEventListener("click", function () {
-//   window.location.href = "design.html";
-// });
+nextButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % carouselImages.length;
+  showImage(currentIndex);
+});
 
-// art.addEventListener("click", function () {
-//   window.location.href = "art.html";
-// });
-
-// contact.addEventListener("click", function () {
-//   window.location.href = "contact.html";
-// });
-
-// const chocoButton = document.querySelector("#chocoButton");
-// const milkButton = document.querySelector("#milkButton");
-// const mixButton = document.querySelector("#mixButton");
-// const cleanButton = document.querySelector("#cleanButton");
-// const machine = document.querySelector("#machine");
-
-// // Add events bellow:
-
-// chocoButton.addEventListener("click", function () {
-//   machine.innerText += "🍫";
-// });
-// milkButton.addEventListener("click", function () {
-//   machine.innerText += "🥛";
-// });
-
-// cleanButton.addEventListener("click", function () {
-//   machine.innerText = "";
-// });
-
-// mixButton.addEventListener("click", function () {
-//   let content = machine.textContent;
-//   let chocolate = 0;
-//   let milk = 0;
-//   console.log(machine.textContent);
-
-//   content.split("").forEach(function (character) {
-//     if (character === "🍫") {
-//       chocolate++;
-//     }
-//     if (character === "🥛") {
-//       milk++;
-//     }
-//     console.log(chocolate);
-//   });
-
-//   console.log(content);
-//   console.log(chocolate);
-//   console.log(milk);
-//   let pairs = Math.min(chocolate, milk);
-//   console.log(pairs);
-// });
+showImage(currentIndex);
