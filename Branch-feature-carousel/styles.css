@@ -7,7 +7,7 @@
 }
 body {
   background-image: url(images/fond.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 /* NAV */
@@ -16,10 +16,10 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   font-family: "barlow", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .nav-list {
@@ -45,9 +45,6 @@ body {
   text-underline-offset: 1rem;
   text-decoration-color: #d1a33d;
 }
-.logo {
-  max-width: 70px;
-}
 
 section {
   text-align: center;
@@ -64,7 +61,7 @@ h1 {
   font-family: "barlow", sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 45px;
+  font-size: 64px;
   margin-bottom: 20px;
 }
 h2 {
@@ -72,7 +69,7 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
-  font-size: 15px;
+  font-size: 25px;
   margin-bottom: 50px;
 }
 
@@ -96,7 +93,7 @@ h2 {
 
 p {
   font-family: "Raleway", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   padding: 40px 20px 0px 20px;
   /* text-align: justify; */
 }
@@ -138,7 +135,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
+  font-size: 25px;
   padding-top: 30px;
 }
 
@@ -189,7 +186,7 @@ h3 {
 
 .infos {
   font-family: "Raleway", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   padding: 5px;
 }
 
